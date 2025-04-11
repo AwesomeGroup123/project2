@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Add to Cart button
   const addToCartButton = document.getElementById('addToCart');
   if (addToCartButton) {
     addToCartButton.addEventListener('click', () => {
@@ -6,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Sign-in form
   const signinForm = document.getElementById('signinForm');
   if (signinForm) {
     signinForm.addEventListener('submit', (event) => {
@@ -14,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Checkout button
   const checkoutButton = document.getElementById('checkoutButton');
   if (checkoutButton) {
     checkoutButton.addEventListener('click', () => {
@@ -21,12 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
- 
+  // Highlight current tab
   const tabs = document.querySelectorAll('.tab');
-  const currentPath = window.location.pathname.split('/').pop();
-
   tabs.forEach(tab => {
-    if (tab.getAttribute('href') === currentPath) {
+    if (window.location.href.includes(tab.getAttribute('href'))) {
       tab.classList.add('active');
     } else {
       tab.classList.remove('active');
