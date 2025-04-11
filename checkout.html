@@ -6,14 +6,14 @@
   <title>Checkout</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="script.js"></script>
-  <nav class="tabs">
-    <a href="index.html" class="tab active">Content</a>
-    <a href="checkout.html" class="tab">Checkout</a>
-    <a href="SignIn.html" class="tab">Sign In</a>
-  </nav>
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <nav class="tabs">
+    <a href="index.html" class="tab">Content</a>
+    <a href="checkout.html" class="tab active">Checkout</a>
+    <a href="SignIn.html" class="tab">Sign In</a>
+  </nav>
   <header>
     <div class="header-left">
       <img src="images/tcg.jpg" alt="TCGPlayer Logo" class="logo">
@@ -63,7 +63,7 @@
       <p>Shipping: $4.00</p>
       <p class="cart-total">Cart Subtotal: $144.00</p>
       <p class="tax-info">Taxes calculated at checkout</p>
-      <button class="checkout-button">Check Out</button>
+      <button class="checkout-button" id="checkoutButton">Check Out</button>
       <div class="cart-management-actions">
         <button class="large-button">Clear Cart</button>
         <button class="large-button">Save All Items</button>
