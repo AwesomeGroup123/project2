@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Add to Cart button event
+  // Add to Cart button
   const addToCartButton = document.getElementById('addToCart');
   if (addToCartButton) {
     addToCartButton.addEventListener('click', () => {
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Sign-in form submission
+  // Sign-in form
   const signinForm = document.getElementById('signinForm');
   if (signinForm) {
     signinForm.addEventListener('submit', (event) => {
@@ -16,11 +16,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Checkout button event
+  // Checkout button
   const checkoutButton = document.getElementById('checkoutButton');
   if (checkoutButton) {
     checkoutButton.addEventListener('click', () => {
       alert('Proceeding to checkout...');
     });
   }
+
+  // Highlight current tab
+  const tabs = document.querySelectorAll('.tab');
+  tabs.forEach(tab => {
+    if (window.location.href.includes(tab.getAttribute('href'))) {
+      tab.classList.add('active');
+    } else {
+      tab.classList.remove('active');
+    }
+  });
 });
