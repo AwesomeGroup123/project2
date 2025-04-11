@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Page</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="script.js"></script>
+<nav class="tabs">
+    <a href="index.html" class="tab active">Content</a>
+    <a href="checkout.html" class="tab">Checkout</a>
+    <a href="SignIn.html" class="tab">Sign In</a>
+</nav>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+        <img src="images/tcg.jpg" alt="TCGPlayer Logo" class="logo">
+        <input type="text" class="search-bar" placeholder="Try 'collector's rare effect monsters'">
+        <nav class="header-buttons">
+            <button class="header-btn">Sign In</button>
+            <button class="header-btn">Sell With Us</button>
+            <img src="images/cart.jpg" alt="Cart Icon" class="icon">
+            <img src="images/profile.jpg" alt="Profile Icon" class="icon">
+        </nav>
+    </div>
+    <div class="franchise-bar">
+        <button class="franchise-btn">Pick Your Franchise</button>
+    </div>
+</header>
+<main>
+    <section class="filters-bar">
+        <button class="filter-btn">All Filters</button>
+        <button class="filter-btn">Condition</button>
+        <button class="filter-btn">Printing</button>
+        <button class="filter-btn">Language</button>
+    </section>
+    <section class="product-details">
+        <div class="product-image">
+            <img src="images/booster.jpg" alt="YuGiOh Booster Box">
+        </div>
+        <div class="product-info">
+            <h1>YuGiOh: Quarter Century Bonanza Booster Box</h1>
+            <div class="price-section">
+                <p class="condition">Unopened</p>
+                <p class="price">$140.00 <span class="shipping">+ $4.00 shipping</span></p>
+                <p class="seller">Sold By <a href="#">RandomCardDealer</a></p>
+                <div class="quantity-selector">
+                    <label for="quantity">Quantity:</label>
+                    <select id="quantity" name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <button class="other-listings-btn">View 18 Other Listings</button>
+            <p class="lowest-price">As low as $140.00</p>
+        </div>
+    </section>
+    <section class="links-bar">
+        <a href="#" class="link">Product Details</a>
+        <a href="#" class="link">Market Price History</a>
+    </section>
+</main>
+</body>
+</html>
