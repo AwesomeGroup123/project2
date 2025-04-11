@@ -10,23 +10,60 @@
 </head>
 <body>
   <header>
-    <img src="images/tcg.jpg" alt="TCGPlayer Logo" class="logo">
+    <div class="header-left">
+      <img src="images/tcg.jpg" alt="TCGPlayer Logo" class="logo">
+      <div class="franchise-dropdown">
+        <button class="dropdown-button">Pick Your Franchise</button>
+        <div class="dropdown-menu">
+          <a href="#">YuGiOh</a>
+          <a href="#">Magic: The Gathering</a>
+          <a href="#">Pokémon</a>
+        </div>
+      </div>
+      <button class="hamburger-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+    </div>
+    <div class="header-right">
+      <input type="text" placeholder="Try 'collector's rare effect monsters'" class="search-bar">
+      <img src="images/cart.jpg" alt="Shopping Cart" class="icon">
+      <img src="images/profile.jpg" alt="Profile" class="icon">
+      <button class="sign-in-button">Sign In</button>
+      <button class="sell-with-us-button">Sell With Us</button>
+    </div>
   </header>
   <main>
     <h1>Shopping Cart</h1>
-    <section id="cart">
+    <section class="cart-content">
       <div class="cart-item">
         <img src="images/booster.jpg" alt="YuGiOh Booster Box">
-        <p>YuGiOh: Quarter Century Bonanza Booster Box</p>
-        <p>Price: $140.00</p>
+        <div class="cart-item-details">
+          <h2>YuGiOh: Quarter Century Bonanza Booster Box</h2>
+          <p class="seller-info">Sold by <a href="#">RandomCardDealer</a></p>
+          <p class="price">$140.00 <span class="item-condition">Unopened</span></p>
+          <div class="cart-item-actions">
+            <button class="small-button">Remove</button>
+            <button class="small-button">Save For Later</button>
+          </div>
+        </div>
       </div>
-      <div class="cart-summary">
-        <p>Subtotal: $140.00</p>
-        <p>Shipping: $4.00</p>
-        <p>Total: $144.00</p>
-        <button id="checkoutButton">Check Out</button>
-      </div>
+      <a href="#" class="continue-shopping-link">Continue Shopping</a>
     </section>
+    <aside class="cart-summary">
+      <h2>Cart Summary</h2>
+      <p>Items: 1</p>
+      <p>Subtotal: $140.00</p>
+      <p>Shipping: $4.00</p>
+      <p class="cart-total">Cart Subtotal: $144.00</p>
+      <p class="tax-info">Taxes calculated at checkout</p>
+      <button class="checkout-button">Check Out</button>
+      <div class="cart-management-actions">
+        <button class="large-button">Clear Cart</button>
+        <button class="large-button">Save All Items</button>
+      </div>
+    </aside>
   </main>
 </body>
 </html>
