@@ -79,169 +79,157 @@ body {
   background-color: #f0f0f0;
 }
 
-/* Filters Bar */
-.filters-bar {
+/* Checkout Page */
+main {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin: 1rem 0;
+  justify-content: space-between;
+  padding: 2rem;
 }
 
-.filter-btn {
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  padding: 0.5rem 1rem;
+.cart-content {
+  flex: 2;
+  background-color: #ebebeb;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+
+.cart-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cart-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.cart-item-details h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cart-item-details .price {
+  color: #333;
+  font-weight: bold;
+}
+
+.cart-item-actions {
+  margin-top: 1rem;
+}
+
+.cart-item-actions .small-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.filter-btn:hover {
-  background-color: #e0e0e0;
+.cart-item-actions .small-button:hover {
+  background-color: #0056b3;
 }
 
-/* Product Section */
-.product-details {
-  display: flex;
-  gap: 2rem;
-  margin: 2rem auto;
-  max-width: 900px;
-  background-color: white;
+.cart-summary {
+  flex: 1;
+  background-color: #d9d9d9;
   padding: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
-.product-image img {
-  max-width: 100%;
-  border-radius: 5px;
-}
-
-.product-info {
-  flex-grow: 1;
-}
-
-.product-info h1 {
+.cart-summary h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-.price-section {
-  margin-bottom: 1rem;
-}
-
-.condition,
-.price,
-.seller {
+.cart-summary p {
   margin-bottom: 0.5rem;
 }
 
-.shipping {
-  font-size: 0.9rem;
-  color: #666;
+.cart-summary .cart-total {
+  font-weight: bold;
 }
 
-.quantity-selector {
-  margin-bottom: 1rem;
-}
-
-.add-to-cart-btn {
+.cart-summary .checkout-button {
+  width: 100%;
   background-color: #007bff;
   color: white;
   border: none;
-  padding: 0.7rem 1.5rem;
+  padding: 0.7rem;
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
 }
 
-.add-to-cart-btn:hover {
+.cart-summary .checkout-button:hover {
   background-color: #0056b3;
 }
 
-.other-listings-btn {
-  margin-top: 1rem;
+/* Sign In Page */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #0047ab;
+}
+
+main h1 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+form {
   background-color: white;
-  border: 1px solid #007bff;
-  color: #007bff;
-  padding: 0.5rem 1rem;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+form input {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.7rem;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.other-listings-btn:hover {
-  background-color: #f0f0f0;
+form button:hover {
+  background-color: #0056b3;
 }
 
-.lowest-price {
-  font-size: 0.9rem;
-  color: #666;
-}
-
-/* Links Bar */
-.links-bar {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin: 2rem 0;
-}
-
-.link {
-  text-decoration: none;
+form a {
   color: #007bff;
+  text-decoration: none;
+  font-size: 0.9rem;
 }
 
-.link:hover {
+form a:hover {
   text-decoration: underline;
 }
 
-/* Footer */
-footer {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  padding: 1rem;
-  background-color: #333;
-  color: white;
-}
-
-.footer-btn {
-  background-color: white;
-  color: #007bff;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.footer-btn:hover {
-  background-color: #f0f0f0;
-}
-
-/* Tabs Navigation */
-.tabs {
-  display: flex;
-  justify-content: center;
-  background-color: #f0f0f0;
-  padding: 0.5rem 0;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid #ccc;
-}
-
-.tab {
-  text-decoration: none;
-  color: #333;
-  padding: 0.5rem 1rem;
-  margin: 0 0.5rem;
-  font-weight: bold;
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.3s;
-}
-
-.tab:hover {
-  border-bottom: 2px solid #007bff;
-}
-
-.tab.active {
-  border-bottom: 2px solid #007bff;
-  color: #007bff;
+main img {
+  margin-top: 2rem;
+  width: 150px;
 }
