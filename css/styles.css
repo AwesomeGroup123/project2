@@ -79,157 +79,169 @@ body {
   background-color: #f0f0f0;
 }
 
-/* Checkout Page */
-main {
+/* Filters Bar */
+.filters-bar {
   display: flex;
-  justify-content: space-between;
-  padding: 2rem;
-}
-
-.cart-content {
-  flex: 2;
-  background-color: #ebebeb;
-  padding: 1rem;
-  border-radius: 10px;
-  margin-right: 1rem;
-}
-
-.cart-item {
-  display: flex;
+  justify-content: center;
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
-.cart-item img {
-  width: 100px;
-  height: 100px;
-  border-radius: 5px;
-}
-
-.cart-item-details h2 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.cart-item-details .price {
-  color: #333;
-  font-weight: bold;
-}
-
-.cart-item-actions {
-  margin-top: 1rem;
-}
-
-.cart-item-actions .small-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 0.5rem;
+.filter-btn {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.cart-item-actions .small-button:hover {
-  background-color: #0056b3;
+.filter-btn:hover {
+  background-color: #e0e0e0;
 }
 
-.cart-summary {
-  flex: 1;
-  background-color: #d9d9d9;
+/* Product Section */
+.product-details {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  background-color: white;
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.cart-summary h2 {
+.product-image img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.product-info {
+  flex-grow: 1;
+}
+
+.product-info h1 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-.cart-summary p {
+.price-section {
+  margin-bottom: 1rem;
+}
+
+.condition,
+.price,
+.seller {
   margin-bottom: 0.5rem;
 }
 
-.cart-summary .cart-total {
-  font-weight: bold;
+.shipping {
+  font-size: 0.9rem;
+  color: #666;
 }
 
-.cart-summary .checkout-button {
-  width: 100%;
+.quantity-selector {
+  margin-bottom: 1rem;
+}
+
+.add-to-cart-btn {
   background-color: #007bff;
   color: white;
   border: none;
-  padding: 0.7rem;
+  padding: 0.7rem 1.5rem;
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
 }
 
-.cart-summary .checkout-button:hover {
+.add-to-cart-btn:hover {
   background-color: #0056b3;
 }
 
-/* Sign In Page */
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #0047ab;
-}
-
-main h1 {
-  color: white;
-  margin-bottom: 1rem;
-}
-
-form {
+.other-listings-btn {
+  margin-top: 1rem;
   background-color: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  width: 400px;
-}
-
-form label {
-  display: block;
-  margin-bottom: 0.5rem;
-  color: #333;
-}
-
-form input {
-  width: 100%;
-  padding: 0.7rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-form button {
-  width: 100%;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 0.7rem;
+  border: 1px solid #007bff;
+  color: #007bff;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
   cursor: pointer;
 }
 
-form button:hover {
-  background-color: #0056b3;
+.other-listings-btn:hover {
+  background-color: #f0f0f0;
 }
 
-form a {
-  color: #007bff;
-  text-decoration: none;
+.lowest-price {
   font-size: 0.9rem;
+  color: #666;
 }
 
-form a:hover {
+/* Links Bar */
+.links-bar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.link {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.link:hover {
   text-decoration: underline;
 }
 
-main img {
-  margin-top: 2rem;
-  width: 150px;
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
+
+.footer-btn {
+  background-color: white;
+  color: #007bff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-btn:hover {
+  background-color: #f0f0f0;
+}
+
+/* Tabs Navigation */
+.tabs {
+  display: flex;
+  justify-content: center;
+  background-color: #f0f0f0;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.tab:hover {
+  border-bottom: 2px solid #007bff;
+}
+
+.tab.active {
+  border-bottom: 2px solid #007bff;
+  color: #007bff;
 }
