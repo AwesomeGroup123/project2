@@ -376,3 +376,71 @@ main img {
   margin-top: 2rem;
   max-width: 150px;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.header-left, .header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.search-bar {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  flex: 1;
+  min-width: 200px;
+}
+
+.sign-in-button,
+.sell-with-us-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sign-in-button:hover,
+.sell-with-us-button:hover {
+  background-color: #0056b3;
+}
+
+.continue-shopping-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.continue-shopping-link:hover {
+  text-decoration: underline;
+}
+
+body {
+  background-color: #f0f2f5;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+button {
+  transition: background-color 0.3s ease;
+}
