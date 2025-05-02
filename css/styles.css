@@ -380,10 +380,81 @@ main img {
   gap: 2rem;
 }
 
+.checkout-page {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.checkout-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #007bff;
+  text-align: center;
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cart-content,
+.cart-summary {
+  background-color: #fdfdfd;
+  border: 1px solid #eee;
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.cart-content {
+  flex: 3;
+}
+
+.cart-summary {
+  flex: 1;
+}
+
+.cart-summary h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.cart-summary .checkout-button {
+  margin-top: 1rem;
+}
+
+.cart-summary .large-button {
+  margin-top: 0.5rem;
+}
+
+.cart-summary p {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.cart-summary .cart-total {
+  color: #000;
+  font-weight: 700;
+}
+
+.cart-summary .tax-info {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 0.3rem;
+}
+
 @media (min-width: 768px) {
   .checkout-container {
     flex-direction: row;
-  }
 }
 
 @media (max-width: 768px) {
@@ -405,4 +476,5 @@ main img {
   input[type="password"] {
     width: 45%;
   }
+}
 }
