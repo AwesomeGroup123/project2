@@ -452,6 +452,29 @@ main img {
   margin-top: 0.3rem;
 }
 
+.cart-item-actions button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+
+.cart-item-actions button:hover {
+  background-color: #0056b3;
+}
+
+.cart-item img {
+  width: 200px;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+
 @media (min-width: 768px) {
   .checkout-container {
     flex-direction: row;
