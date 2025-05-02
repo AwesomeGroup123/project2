@@ -11,9 +11,10 @@
   <body>
     <nav class="tabs">
       <a href="index.html" class="tab">Content</a>
-      <a href="checkout.html" class="tab">Checkout</a>
+      <a href="checkout.html" class="tab active">Checkout</a>
       <a href="signin.html" class="tab">Sign In</a>
     </nav>
+
     <header>
       <div class="header-left">
         <img src="images/tcg.jpg" alt="TCGPlayer Logo" class="logo">
@@ -25,52 +26,51 @@
             <a href="#">Pokémon</a>
           </div>
         </div>
-        <button class="hamburger-menu">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
       </div>
       <div class="header-right">
         <input type="text" placeholder="Try 'collector's rare effect monsters'" class="search-bar">
         <img src="images/cart.jpg" alt="Shopping Cart" class="icon">
         <img src="images/profile.jpg" alt="Profile" class="icon">
-        <button class="sign-in-button">Sign In</button>
-        <button class="sell-with-us-button">Sell With Us</button>
+        <button class="sign-in-button header-btn">Sign In</button>
+        <button class="sell-with-us-button header-btn">Sell With Us</button>
       </div>
     </header>
+
     <main>
       <h1>Shopping Cart</h1>
-      <section class="cart-content">
-        <form method="get" action="#null" autocomplete="on">
-          <div class="cart-item">
-            <img src="images/booster.jpg" alt="YuGiOh Booster Box">
-            <div class="cart-item-details">
-              <h2>YuGiOh: Quarter Century Bonanza Booster Box</h2>
-              <p class="seller-info">Sold by <a href="#">RandomCardDealer</a></p>
-              <p class="price">$140.00 <span class="item-condition">Unopened</span></p>
-              <div class="cart-item-actions">
-                <button class="small-button">Remove</button>
-                <button class="small-button">Save For Later</button>
+      <div class="checkout-container">
+        <section class="cart-content">
+          <form method="get" action="#null" autocomplete="on">
+            <div class="cart-item">
+              <img src="images/booster.jpg" alt="YuGiOh Booster Box">
+              <div class="cart-item-details">
+                <h2>YuGiOh: Quarter Century Bonanza Booster Box</h2>
+                <p class="seller-info">Sold by <a href="#">RandomCardDealer</a></p>
+                <p class="price">$140.00 <span class="item-condition">Unopened</span></p>
+                <div class="cart-item-actions">
+                  <button class="small-button">Remove</button>
+                  <button class="small-button">Save For Later</button>
+                </div>
               </div>
             </div>
+            <a href="#" class="continue-shopping-link">Continue Shopping</a>
+          </form>
+        </section>
+
+        <aside class="cart-summary">
+          <h2>Cart Summary</h2>
+          <p>Items: 1</p>
+          <p>Subtotal: $140.00</p>
+          <p>Shipping: $4.00</p>
+          <p class="cart-total">Cart Subtotal: $144.00</p>
+          <p class="tax-info">Taxes calculated at checkout</p>
+          <button id="checkoutButton" class="checkout-button">Check Out</button>
+          <div class="cart-management-actions">
+            <button class="large-button">Clear Cart</button>
+            <button class="large-button">Save All Items</button>
           </div>
-          <a href="#" class="continue-shopping-link">Continue Shopping</a>
-        </form>
-      </section>
-      <aside class="cart-summary">
-        <h2>Cart Summary</h2>
-        <p>Items: 1</p>
-        <p>Subtotal: $140.00</p>
-        <p>Shipping: $4.00</p>
-        <p class="cart-total">Cart Subtotal: $144.00</p>
-        <p class="tax-info">Taxes calculated at checkout</p>
-        <button id="checkoutButton" class="checkout-button">Check Out</button>
-        <div class="cart-management-actions">
-          <button class="large-button">Clear Cart</button>
-          <button class="large-button">Save All Items</button>
-        </div>
-      </aside>
+        </aside>
+      </div>
     </main>
   </body>
 </html>
